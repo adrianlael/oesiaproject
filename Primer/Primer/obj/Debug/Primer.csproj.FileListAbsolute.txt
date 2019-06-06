@@ -1,0 +1,14 @@
+C:\Users\extaliria\source\repos\Primer\Primer\bin\Debug\Primer.exe.config
+C:\Users\extaliria\source\repos\Primer\Primer\bin\Debug\Primer.exe
+C:\Users\extaliria\source\repos\Primer\Primer\bin\Debug\Primer.pdb
+C:\Users\extaliria\source\repos\Primer\Primer\obj\Debug\Primer.csprojAssemblyReference.cache
+C:\Users\extaliria\source\repos\Primer\Primer\obj\Debug\Primer.Login.resources
+C:\Users\extaliria\source\repos\Primer\Primer\obj\Debug\Primer.Menu.resources
+C:\Users\extaliria\source\repos\Primer\Primer\obj\Debug\Primer.Clientes.resources
+C:\Users\extaliria\source\repos\Primer\Primer\obj\Debug\Primer.Articulos.resources
+C:\Users\extaliria\source\repos\Primer\Primer\obj\Debug\Primer.Pedidos.resources
+C:\Users\extaliria\source\repos\Primer\Primer\obj\Debug\Primer.Properties.Resources.resources
+C:\Users\extaliria\source\repos\Primer\Primer\obj\Debug\Primer.csproj.GenerateResource.cache
+C:\Users\extaliria\source\repos\Primer\Primer\obj\Debug\Primer.csproj.CoreCompileInputs.cache
+C:\Users\extaliria\source\repos\Primer\Primer\obj\Debug\Primer.exe
+C:\Users\extaliria\source\repos\Primer\Primer\obj\Debug\Primer.pdb

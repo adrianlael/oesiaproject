@@ -17,16 +17,17 @@ namespace Primer
             InitializeComponent();
         }
 
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void atras_Click(object sender, EventArgs e)
         {
             this.Hide();
             Menu menu = new Menu();
             menu.Show();
+        }
+
+        private void buscar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

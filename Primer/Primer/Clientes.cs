@@ -17,21 +17,6 @@ namespace Primer
             InitializeComponent();
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form3_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void atras_Click(object sender, EventArgs e)
         {
             this.Hide();

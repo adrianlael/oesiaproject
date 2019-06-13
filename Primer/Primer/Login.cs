@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Primer
 {
@@ -24,20 +25,30 @@ namespace Primer
 
         private void Login_Click(object sender, EventArgs e)
         {
+            try
+            {
+                SqlConnection conectar = new SqlConnection(@"Data Source=GO070135\SQLEXPRESS;Initial Catalog=tienda;Integrated Security=True");
 
-            if(this.usuario.Text == "administrador" && this.contraseña.Text == "admin123")
-            {
-                this.Hide();
-                Menu menu = new Menu();
-                menu.Show();
+                conectar.Open();
+                MessageBox.Show("Conexión establecida");
             }
-            else
+            catch(Exception error)
             {
-                MessageBox.Show("Usuario o contraseña incorrecto");
-                this.usuario.Text = "";
-                this.contraseña.Text = "";
-                this.usuario.Focus();
+                MessageBox.Show("No se ha podido conectar" + error.Message);
             }
+            //if (this.usuario.Text == "administrador" && this.contraseña.Text == "admin123")
+            //{
+            //    this.Hide();
+            //    Menu menu = new Menu();
+            //    menu.Show();
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Usuario o contraseña incorrecto");
+            //    this.usuario.Text = "";
+            //    this.contraseña.Text = "";
+            //    this.usuario.Focus();
+            //}
         }
         private void usuario_TextChanged(object sender, EventArgs e)
         {

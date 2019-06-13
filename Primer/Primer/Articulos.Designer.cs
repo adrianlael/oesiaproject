@@ -39,7 +39,7 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.atras = new System.Windows.Forms.Button();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.Marca = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -149,15 +149,16 @@
             this.textBox7.Size = new System.Drawing.Size(130, 20);
             this.textBox7.TabIndex = 14;
             // 
-            // button3
+            // atras
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.Location = new System.Drawing.Point(409, 435);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(95, 25);
-            this.button3.TabIndex = 15;
-            this.button3.Text = "Atrás";
-            this.button3.UseVisualStyleBackColor = true;
+            this.atras.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.atras.Location = new System.Drawing.Point(409, 435);
+            this.atras.Name = "atras";
+            this.atras.Size = new System.Drawing.Size(95, 25);
+            this.atras.TabIndex = 15;
+            this.atras.Text = "Atrás";
+            this.atras.UseVisualStyleBackColor = true;
+            this.atras.Click += new System.EventHandler(this.atras_Click);
             // 
             // textBox8
             // 
@@ -196,7 +197,7 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.Marca);
             this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.atras);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
@@ -228,7 +229,7 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button atras;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Label Marca;
         private System.Windows.Forms.TextBox textBox2;

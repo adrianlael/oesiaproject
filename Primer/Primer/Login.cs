@@ -27,7 +27,9 @@ namespace Primer
 
             if(this.usuario.Text == "administrador" && this.contraseña.Text == "admin123")
             {
-                MessageBox.Show("Ha ingresado correctamente");
+                this.Hide();
+                Menu menu = new Menu();
+                menu.Show();
             }
             else
             {

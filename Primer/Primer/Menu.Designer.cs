@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.Clientes = new System.Windows.Forms.Button();
             this.Articulos = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.cerrarsesion = new System.Windows.Forms.Button();
             this.Pedidos = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -57,15 +57,16 @@
             this.Articulos.UseVisualStyleBackColor = true;
             this.Articulos.Click += new System.EventHandler(this.Articulos_Click);
             // 
-            // button3
+            // cerrarsesion
             // 
-            this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button3.Location = new System.Drawing.Point(678, 413);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(92, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Cerrar sesión";
-            this.button3.UseVisualStyleBackColor = true;
+            this.cerrarsesion.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cerrarsesion.Location = new System.Drawing.Point(678, 413);
+            this.cerrarsesion.Name = "cerrarsesion";
+            this.cerrarsesion.Size = new System.Drawing.Size(92, 23);
+            this.cerrarsesion.TabIndex = 2;
+            this.cerrarsesion.Text = "Cerrar sesión";
+            this.cerrarsesion.UseVisualStyleBackColor = true;
+            this.cerrarsesion.Click += new System.EventHandler(this.cerrarsesion_Click);
             // 
             // Pedidos
             // 
@@ -86,7 +87,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(791, 469);
             this.Controls.Add(this.Pedidos);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.cerrarsesion);
             this.Controls.Add(this.Articulos);
             this.Controls.Add(this.Clientes);
             this.Name = "Menu";
@@ -99,7 +100,7 @@
 
         private System.Windows.Forms.Button Clientes;
         private System.Windows.Forms.Button Articulos;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button cerrarsesion;
         private System.Windows.Forms.Button Pedidos;
     }
 }

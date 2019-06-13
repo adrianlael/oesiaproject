@@ -31,5 +31,12 @@ namespace Primer
         {
 
         }
+
+        private void atras_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Menu menu = new Menu();
+            menu.Show();
+        }
     }
 }

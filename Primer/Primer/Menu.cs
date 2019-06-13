@@ -19,17 +19,30 @@ namespace Primer
 
         private void Clientes_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Clientes clientes = new Clientes();
+            clientes.Show();
         }
 
         private void Pedidos_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Pedidos pedidos = new Pedidos();
+            pedidos.Show();
         }
 
         private void Articulos_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            Articulos articulos = new Articulos();
+            articulos.Show();
+        }
 
+        private void cerrarsesion_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login login = new Login();
+            login.Show();
         }
     }
 }

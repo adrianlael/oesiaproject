@@ -24,6 +24,7 @@ namespace Primer
 
         private void Login_Click(object sender, EventArgs e)
         {
+
             if(this.usuario.Text == "administrador" && this.contraseña.Text == "admin123")
             {
                 MessageBox.Show("Ha ingresado correctamente");

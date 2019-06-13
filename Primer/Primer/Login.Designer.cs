@@ -53,6 +53,14 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Contraseña:";
             // 
+            // usuario
+            // 
+            this.usuario.Location = new System.Drawing.Point(128, 94);
+            this.usuario.Name = "usuario";
+            this.usuario.Size = new System.Drawing.Size(100, 20);
+            this.usuario.TabIndex = 3;
+            this.usuario.TextChanged += new System.EventHandler(this.usuario_TextChanged);
+            // 
             // contraseña
             // 
             this.contraseña.Location = new System.Drawing.Point(128, 131);
@@ -61,14 +69,6 @@
             this.contraseña.Size = new System.Drawing.Size(100, 20);
             this.contraseña.TabIndex = 2;
             this.contraseña.TextChanged += new System.EventHandler(this.contraseña_TextChanged);
-            // 
-            // usuario
-            // 
-            this.usuario.Location = new System.Drawing.Point(128, 94);
-            this.usuario.Name = "usuario";
-            this.usuario.Size = new System.Drawing.Size(100, 20);
-            this.usuario.TabIndex = 3;
-            this.usuario.TextChanged += new System.EventHandler(this.usuario_TextChanged);
             // 
             // ingresar
             // 

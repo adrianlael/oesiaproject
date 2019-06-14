@@ -26,3 +26,6 @@ C:\Users\extaliria\Documents\oesiaproject\Primer\Primer\obj\Debug\Primer.csproj.
 C:\Users\extaliria\Documents\oesiaproject\Primer\Primer\obj\Debug\Primer.csproj.CoreCompileInputs.cache
 C:\Users\extaliria\Documents\oesiaproject\Primer\Primer\obj\Debug\Primer.exe
 C:\Users\extaliria\Documents\oesiaproject\Primer\Primer\obj\Debug\Primer.pdb
+C:\Users\extaliria\Documents\oesiaproject\Primer\Primer\bin\Debug\LibreriaBD.dll
+C:\Users\extaliria\Documents\oesiaproject\Primer\Primer\bin\Debug\LibreriaBD.pdb
+C:\Users\extaliria\Documents\oesiaproject\Primer\Primer\obj\Debug\Primer.csproj.CopyComplete

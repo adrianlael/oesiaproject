@@ -44,5 +44,10 @@ namespace Primer
             Login login = new Login();
             login.Show();
         }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

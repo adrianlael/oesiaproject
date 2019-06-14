@@ -54,6 +54,7 @@
             this.buscarnifnie.TabIndex = 0;
             this.buscarnifnie.Text = "NIF / NIE";
             this.buscarnifnie.UseVisualStyleBackColor = true;
+            this.buscarnifnie.Click += new System.EventHandler(this.buscarnifnie_Click);
             // 
             // añadircliente
             // 
@@ -70,6 +71,7 @@
             this.nifnie.Name = "nifnie";
             this.nifnie.Size = new System.Drawing.Size(100, 20);
             this.nifnie.TabIndex = 3;
+            this.nifnie.TextChanged += new System.EventHandler(this.nifnie_TextChanged);
             // 
             // nombre
             // 
@@ -200,6 +202,7 @@
             this.Controls.Add(this.buscarnifnie);
             this.Name = "Clientes";
             this.Text = "Clientes";
+            this.Load += new System.EventHandler(this.Clientes_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

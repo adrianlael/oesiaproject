@@ -92,6 +92,7 @@
             this.Controls.Add(this.Clientes);
             this.Name = "Menu";
             this.Text = " ";
+            this.Load += new System.EventHandler(this.Menu_Load);
             this.ResumeLayout(false);
 
         }

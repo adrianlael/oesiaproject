@@ -1,0 +1,6 @@
+C:\Users\extaliria\Documents\oesiaproject\Primer\LibreriaBD\bin\Debug\LibreriaBD.dll
+C:\Users\extaliria\Documents\oesiaproject\Primer\LibreriaBD\bin\Debug\LibreriaBD.pdb
+C:\Users\extaliria\Documents\oesiaproject\Primer\LibreriaBD\obj\Debug\LibreriaBD.csprojAssemblyReference.cache
+C:\Users\extaliria\Documents\oesiaproject\Primer\LibreriaBD\obj\Debug\LibreriaBD.csproj.CoreCompileInputs.cache
+C:\Users\extaliria\Documents\oesiaproject\Primer\LibreriaBD\obj\Debug\LibreriaBD.dll
+C:\Users\extaliria\Documents\oesiaproject\Primer\LibreriaBD\obj\Debug\LibreriaBD.pdb

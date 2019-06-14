@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using LibreriaBD;
 
 namespace Primer
 {
@@ -16,6 +17,7 @@ namespace Primer
         public Login()
         {
             InitializeComponent();
+            this.usuario.Select();
         }
 
         private void Login_Load(object sender, EventArgs e)
@@ -27,32 +29,30 @@ namespace Primer
         {
             try
             {
-                SqlConnection conectar = new SqlConnection(@"Data Source=GO070135\SQLEXPRESS;Initial Catalog=tienda;Integrated Security=True");
+                string validar = string.Format("SELECT * FROM usuario WHERE username = '{0}' AND password = '{1}'", this.usuario.Text.Trim(),this.contraseña.Text.Trim());
+                DataSet conectar = Biblioteca.Herramientas(validar);
 
-                conectar.Open();
-                MessageBox.Show("Conexión establecida");
+                string cuenta = conectar.Tables[0].Rows[0]["username"].ToString().Trim();
+                string contrasena = conectar.Tables[0].Rows[0]["password"].ToString().Trim();
+
+                if(cuenta == this.usuario.Text.Trim() && contrasena == this.contraseña.Text.Trim())
+                {
+                    MessageBox.Show("Ha iniciado sesión correctamente");
+                    this.Hide();
+                    Menu menu = new Menu();
+                    menu.Show();
+                }  
             }
-            catch(Exception error)
+            catch
             {
-                MessageBox.Show("No se ha podido conectar" + error.Message);
+                MessageBox.Show("Usuario o contraseña inválidos");
             }
-            //if (this.usuario.Text == "administrador" && this.contraseña.Text == "admin123")
-            //{
-            //    this.Hide();
-            //    Menu menu = new Menu();
-            //    menu.Show();
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Usuario o contraseña incorrecto");
-            //    this.usuario.Text = "";
-            //    this.contraseña.Text = "";
-            //    this.usuario.Focus();
-            //}
+
         }
         private void usuario_TextChanged(object sender, EventArgs e)
-        {
-
+        { 
+        
+           
         }
         private void contraseña_TextChanged(object sender, EventArgs e)
         {

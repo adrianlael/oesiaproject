@@ -10,21 +10,14 @@ using System.Windows.Forms;
 
 namespace Primer
 {
-    public partial class Pedidos : FormBase
+    public partial class DatosClientes : FormBase
     {
-        public Pedidos()
+        public DatosClientes()
         {
             InitializeComponent();
         }
 
-        private void atras_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Menu menu = new Menu();
-            menu.Show();
-        }
-
-        private void Pedidos_Load(object sender, EventArgs e)
+        private void DatosCliente_Load(object sender, EventArgs e)
         {
 
         }

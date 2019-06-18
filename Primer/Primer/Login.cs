@@ -11,7 +11,7 @@ using System.Data.SqlClient;
 using LibreriaBD;
 
 namespace Primer
-{
+    {
     public partial class Login : Form
     {
         public Login()

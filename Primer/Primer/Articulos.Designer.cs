@@ -38,9 +38,9 @@
             this.stock = new System.Windows.Forms.TextBox();
             this.talla = new System.Windows.Forms.TextBox();
             this.color = new System.Windows.Forms.TextBox();
-            this.atras = new System.Windows.Forms.Button();
             this.marca = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.añadirArticulo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buscar
@@ -137,17 +137,7 @@
             this.color.ReadOnly = true;
             this.color.Size = new System.Drawing.Size(130, 20);
             this.color.TabIndex = 14;
-            // 
-            // atras
-            // 
-            this.atras.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.atras.Location = new System.Drawing.Point(380, 424);
-            this.atras.Name = "atras";
-            this.atras.Size = new System.Drawing.Size(95, 25);
-            this.atras.TabIndex = 15;
-            this.atras.Text = "Atrás";
-            this.atras.UseVisualStyleBackColor = true;
-            this.atras.Click += new System.EventHandler(this.atras_Click);
+            this.color.TextChanged += new System.EventHandler(this.color_TextChanged);
             // 
             // marca
             // 
@@ -168,14 +158,23 @@
             this.label2.TabIndex = 17;
             this.label2.Text = "Marca";
             // 
+            // añadirArticulo
+            // 
+            this.añadirArticulo.Location = new System.Drawing.Point(34, 424);
+            this.añadirArticulo.Name = "añadirArticulo";
+            this.añadirArticulo.Size = new System.Drawing.Size(95, 25);
+            this.añadirArticulo.TabIndex = 18;
+            this.añadirArticulo.Text = "Añadir";
+            this.añadirArticulo.UseVisualStyleBackColor = true;
+            // 
             // Articulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(543, 493);
+            this.Controls.Add(this.añadirArticulo);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.marca);
-            this.Controls.Add(this.atras);
             this.Controls.Add(this.color);
             this.Controls.Add(this.talla);
             this.Controls.Add(this.stock);
@@ -189,6 +188,21 @@
             this.MaximizeBox = false;
             this.Name = "Articulos";
             this.Text = "Artículos";
+            this.Load += new System.EventHandler(this.Articulos_Load);
+            this.Controls.SetChildIndex(this.buscar, 0);
+            this.Controls.SetChildIndex(this.idarticulo, 0);
+            this.Controls.SetChildIndex(this.label3, 0);
+            this.Controls.SetChildIndex(this.label4, 0);
+            this.Controls.SetChildIndex(this.label5, 0);
+            this.Controls.SetChildIndex(this.label1, 0);
+            this.Controls.SetChildIndex(this.modelo, 0);
+            this.Controls.SetChildIndex(this.stock, 0);
+            this.Controls.SetChildIndex(this.talla, 0);
+            this.Controls.SetChildIndex(this.color, 0);
+            this.Controls.SetChildIndex(this.marca, 0);
+            this.Controls.SetChildIndex(this.label2, 0);
+            this.Controls.SetChildIndex(this.añadirArticulo, 0);
+            this.Controls.SetChildIndex(this.btnAtras, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -206,8 +220,8 @@
         private System.Windows.Forms.TextBox stock;
         private System.Windows.Forms.TextBox talla;
         private System.Windows.Forms.TextBox color;
-        private System.Windows.Forms.Button atras;
         private System.Windows.Forms.TextBox marca;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button añadirArticulo;
     }
 }

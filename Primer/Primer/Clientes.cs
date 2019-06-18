@@ -12,12 +12,12 @@ using LibreriaBD;
 
 namespace Primer
 {
-    public partial class Clientes : Form
+    public partial class Clientes : FormBase
     {
-        
+
         public Clientes()
         {
-            InitializeComponent();
+            this.InitializeComponent();
         }
 
         private void atras_Click(object sender, EventArgs e)
@@ -34,7 +34,18 @@ namespace Primer
 
         private void buscarnifnie_Click(object sender, EventArgs e)
         {
-            Biblioteca.Herramientas("SELECT * FROM Cliente WHERE id_cl = (this.nifnie_TextChanged.Text)");
+            Biblioteca.Herramientas("SELECT * FROM cliente WHERE id_cl = (this.nifnie_TextChanged.Text)");
+            DialogResult resultado = MessageBox.Show("No existe ¿Desea crearlo?", "", MessageBoxButtons.YesNo);
+            if (resultado == DialogResult.Yes)
+            {
+                this.Hide();
+                DatosClientes datosClientes = new DatosClientes();
+                datosClientes.Show();
+            }
+            else if (resultado == DialogResult.No)
+            {
+                //do something else
+            }
         }
 
         private void nifnie_TextChanged(object sender, EventArgs e)

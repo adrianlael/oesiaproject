@@ -14,7 +14,7 @@ namespace Primer
     {
         public Menu()
         {
-            InitializeComponent();
+            this.InitializeComponent();
         }
 
         private void Clientes_Click(object sender, EventArgs e)

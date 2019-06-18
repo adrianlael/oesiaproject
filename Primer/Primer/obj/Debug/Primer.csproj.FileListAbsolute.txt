@@ -29,3 +29,6 @@ C:\Users\extaliria\Documents\oesiaproject\Primer\Primer\obj\Debug\Primer.pdb
 C:\Users\extaliria\Documents\oesiaproject\Primer\Primer\bin\Debug\LibreriaBD.dll
 C:\Users\extaliria\Documents\oesiaproject\Primer\Primer\bin\Debug\LibreriaBD.pdb
 C:\Users\extaliria\Documents\oesiaproject\Primer\Primer\obj\Debug\Primer.csproj.CopyComplete
+C:\Users\extaliria\Documents\oesiaproject\Primer\Primer\obj\Debug\Primer.DatosClientes.resources
+C:\Users\extaliria\Documents\oesiaproject\Primer\Primer\obj\Debug\Primer.AñadirClientes.resources
+C:\Users\extaliria\Documents\oesiaproject\Primer\Primer\obj\Debug\Primer.FormBase.resources

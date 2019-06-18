@@ -91,7 +91,7 @@
             this.Controls.Add(this.Articulos);
             this.Controls.Add(this.Clientes);
             this.Name = "Menu";
-            this.Text = " ";
+            this.Text = " Menú";
             this.Load += new System.EventHandler(this.Menu_Load);
             this.ResumeLayout(false);
 

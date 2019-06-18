@@ -33,7 +33,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
-            this.atras = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -79,16 +78,6 @@
             this.button3.Text = "Realizar pedido";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // atras
-            // 
-            this.atras.Location = new System.Drawing.Point(688, 395);
-            this.atras.Name = "atras";
-            this.atras.Size = new System.Drawing.Size(75, 23);
-            this.atras.TabIndex = 5;
-            this.atras.Text = "Atrás";
-            this.atras.UseVisualStyleBackColor = true;
-            this.atras.Click += new System.EventHandler(this.atras_Click);
-            // 
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(267, 99);
@@ -109,10 +98,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.atras);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.button2);
@@ -120,6 +109,15 @@
             this.Controls.Add(this.button1);
             this.Name = "Pedidos";
             this.Text = "Pedidos";
+            this.Load += new System.EventHandler(this.Pedidos_Load);
+            this.Controls.SetChildIndex(this.btnAtras, 0);
+            this.Controls.SetChildIndex(this.button1, 0);
+            this.Controls.SetChildIndex(this.textBox1, 0);
+            this.Controls.SetChildIndex(this.button2, 0);
+            this.Controls.SetChildIndex(this.textBox2, 0);
+            this.Controls.SetChildIndex(this.button3, 0);
+            this.Controls.SetChildIndex(this.textBox3, 0);
+            this.Controls.SetChildIndex(this.button5, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -132,7 +130,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button atras;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button button5;
     }

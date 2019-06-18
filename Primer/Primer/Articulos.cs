@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace Primer
 {
-    public partial class Articulos : Form
+    public partial class Articulos : FormBase
     {
         public Articulos()
         {
-            InitializeComponent();
+            this.InitializeComponent();
         }
 
 
@@ -26,6 +26,16 @@ namespace Primer
         }
 
         private void buscar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Articulos_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void color_TextChanged(object sender, EventArgs e)
         {
 
         }

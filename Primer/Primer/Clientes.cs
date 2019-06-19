@@ -15,6 +15,7 @@ namespace Primer
     public partial class Clientes : FormBase
     {
 
+
         public Clientes()
         {
             this.InitializeComponent();
@@ -27,30 +28,34 @@ namespace Primer
             menu.Show();
         }
 
-        private void Clientes_Load(object sender, EventArgs e)
-        {
-
-        }
+        string v_nifnie = Biblioteca.Herramientas();
 
         private void buscarnifnie_Click(object sender, EventArgs e)
         {
-            Biblioteca.Herramientas("SELECT * FROM cliente WHERE id_cl = (this.nifnie_TextChanged.Text)");
-            DialogResult resultado = MessageBox.Show("No existe ¿Desea crearlo?", "", MessageBoxButtons.YesNo);
-            if (resultado == DialogResult.Yes)
+            if ( == this.nifnie.Text)
             {
                 this.Hide();
                 DatosClientes datosClientes = new DatosClientes();
                 datosClientes.Show();
             }
-            else if (resultado == DialogResult.No)
+            else
             {
-                //do something else
+                Biblioteca.Herramientas($"SELECT * FROM cliente WHERE id_cl = '{this.nifnie.Text}'");
+                DialogResult resultado = MessageBox.Show("No existe ¿Desea crearlo?", "", MessageBoxButtons.YesNo);
+                if (resultado == DialogResult.Yes)
+                {
+                    this.Hide();
+                    AñadirClientes añadirClientes = new AñadirClientes();
+                    añadirClientes.Show();
+                }
+                else if (resultado == DialogResult.No)
+                {
+                    this.Hide();
+                    Clientes clientes = new Clientes();
+                    clientes.Show();
+                }
             }
-        }
-
-        private void nifnie_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
+    

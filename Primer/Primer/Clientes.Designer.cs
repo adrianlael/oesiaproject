@@ -54,7 +54,6 @@
             this.nifnie.Name = "nifnie";
             this.nifnie.Size = new System.Drawing.Size(150, 20);
             this.nifnie.TabIndex = 3;
-            this.nifnie.TextChanged += new System.EventHandler(this.nifnie_TextChanged);
             // 
             // Clientes
             // 
@@ -66,7 +65,6 @@
             this.MaximizeBox = false;
             this.Name = "Clientes";
             this.Text = "Clientes";
-            this.Load += new System.EventHandler(this.Clientes_Load);
             this.Controls.SetChildIndex(this.btnAtras, 0);
             this.Controls.SetChildIndex(this.buscarnifnie, 0);
             this.Controls.SetChildIndex(this.nifnie, 0);
